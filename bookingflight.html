@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <br /><br />
+      <h1>BOOK YOUR FLIGHTS HERE</h1>
+      <br /><br />
+
+      <form action="/submit-booking" method="post">
+        <br /><br />
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required />
+
+        <label for="from">From:</label>
+        <select id="from" name="from">
+          <option value="">Select Airport</option>
+          <!--Africa-->
+          <option value="JNB">Johannesburg (JNB)</option>
+          <option value="CPT">Cape Town (CPT)</option>
+          <option value="LOS">Lagos (LOS)</option>
+          <option value="NBO">Nairobi (NBO)</option>
+          <option value="CAI">Cairo (CAI)</option>
+          <option value="ADD">Addis Ababa (ADD)</option>
+          <!-- Europe -->
+          <option value="LHR">London Heathrow (LHR)</option>
+          <option value="CDG">Paris Charles de Gaulle (CDG)</option>
+          <option value="FRA">Frankfurt (FRA)</option>
+          <option value="AMS">Amsterdam Schiphol (AMS)</option>
+          <option value="MAD">Madrid Barajas (MAD)</option>
+          <!-- Asia -->
+          <option value="HND">Tokyo Haneda (HND)</option>
+          <option value="PEK">Beijing Capital (PEK)</option>
+          <option value="SIN">Singapore Changi (SIN)</option>
+          <option value="BKK">Bangkok Suvarnabhumi (BKK)</option>
+          <option value="DXB">Dubai (DXB)</option>
+          <!-- America -->
+          <option value="JFK">New York John F. Kennedy (JFK)</option>
+          <option value="LAX">Los Angeles (LAX)</option>
+          <option value="ORD">Chicago O'Hare (ORD)</option>
+          <option value="DFW">Dallas/Fort Worth (DFW)</option>
+          <option value="MIA">Miami (MIA)</option>
+          <!-- Add more airports as needed -->
+        </select>
+        <label for="to">To:</label>
+        <select id="to" name="to">
+          <option value="">Select Airport</option>
+          <option value="JNB">Johannesburg (JNB)</option>
+          <option value="CPT">Cape Town (CPT)</option>
+          <option value="LOS">Lagos (LOS)</option>
+          <option value="NBO">Nairobi (NBO)</option>
+          <option value="CAI">Cairo (CAI)</option>
+          <option value="ADD">Addis Ababa (ADD)</option>
+          <!-- Europe -->
+          <option value="LHR">London Heathrow (LHR)</option>
+          <option value="CDG">Paris Charles de Gaulle (CDG)</option>
+          <option value="FRA">Frankfurt (FRA)</option>
+          <option value="AMS">Amsterdam Schiphol (AMS)</option>
+          <option value="MAD">Madrid Barajas (MAD)</option>
+          <!-- Asia -->
+          <option value="HND">Tokyo Haneda (HND)</option>
+          <option value="PEK">Beijing Capital (PEK)</option>
+          <option value="SIN">Singapore Changi (SIN)</option>
+          <option value="BKK">Bangkok Suvarnabhumi (BKK)</option>
+          <option value="DXB">Dubai (DXB)</option>
+          <!-- America -->
+          <option value="JFK">New York John F. Kennedy (JFK)</option>
+          <option value="LAX">Los Angeles (LAX)</option>
+          <option value="ORD">Chicago O'Hare (ORD)</option>
+          <option value="DFW">Dallas/Fort Worth (DFW)</option>
+          <option value="MIA">Miami (MIA)</option>
+          <!-- Add more airports as needed -->
+        </select>
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" />
+
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" />
+
+        <label for="passengers">Number of Passengers:</label>
+        <input
+          type="number"
+          id="passengers"
+          name="passengers"
+          min="1"
+          max="10"
+        />
+        <input type="submit" value="Book Flight" />
+      </form>
+    </div>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("/Worlds-Longest-Narrowbody-Flights.gif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background-image: url("/10-APIs-For-Flights-Prices-and-Booking.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(247, 10, 10, 0.1);
+      }
+      h1 {
+        color: #f2f0f2;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input,
+      select {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #4cae4c;
+      }
+    </style>
+  </body>
+</html>
